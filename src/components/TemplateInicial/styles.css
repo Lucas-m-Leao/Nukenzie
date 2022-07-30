@@ -1,0 +1,263 @@
+.templateInical {
+  background-color: #000000;
+  width: 100vw;
+  height: 100vh;
+  color: #ffffff;
+  font-family: "Nunito", sans-serif;
+}
+.kenzie {
+  margin-top: 20px;
+}
+.containerText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.containerText > h2 {
+  animation: titulo 1s forwards;
+  animation-delay: 6s;
+  width: 235px;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+}
+@keyframes titulo {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: translatey(-30vh);
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    transform: translatey(calc(-5px-0));
+  }
+}
+.containerText > p {
+  animation: paragrafo 1s forwards;
+  animation-delay: 6.9s;
+  margin: 0;
+  margin-bottom: 30px;
+  opacity: 0;
+}
+@keyframes paragrafo {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: translatex(-50vh);
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    transform: translatex(calc(-5px-0));
+  }
+}
+.containerText > button {
+  animation: button 2s forwards;
+  animation-delay: 7s;
+  border: 2px solid #fd377e;
+  background: #fd377e;
+  border-radius: 8px;
+  color: #ffffff;
+  width: 10rem;
+  height: 2rem;
+  cursor: pointer;
+  opacity: 0;
+  font-family: "Inter", sans-serif;
+}
+.containerText > button:hover {
+  box-shadow: 0px 0px 10px 5px rgba(253, 55, 126, 0.75);
+}
+@keyframes button {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: translatey(20vh);
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    transform: translatey(calc(-5px-0));
+  }
+}
+.container {
+  display: flex;
+  height: 301px;
+  flex-direction: column;
+  align-items: center;
+}
+.elipse1 {
+  animation: elipse1 0.6s;
+  top: 10px;
+  position: relative;
+  width: 16rem;
+  transition: margin-left 4s ease-in-out 1s;
+}
+@keyframes elipse1 {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: translatex(-50%);
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    transform: translatex(calc(-5px-0));
+  }
+}
+.elipse2 {
+  animation: elipse2 0.6s forwards;
+  animation-delay: 1s;
+  position: relative;
+  width: 14rem;
+  bottom: 231px;
+  opacity: 0;
+}
+@keyframes elipse2 {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: translatex(50%);
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    transform: translatex(calc(5px 0));
+  }
+}
+.elipse3 {
+  animation: elipse3 0.6s forwards;
+  animation-delay: 2s;
+  position: relative;
+  width: 12rem;
+  bottom: 440px;
+  opacity: 0;
+}
+@keyframes elipse3 {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: translatex(-50%);
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    transform: translatex(calc(5px 0));
+  }
+}
+.retangle {
+  animation: retangle 1s forwards;
+  animation-delay: 3s;
+  position: relative;
+  bottom: 643px;
+  width: 10rem;
+  opacity: 0;
+}
+@keyframes retangle {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: translatex(50%);
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    transform: translatex(calc(5px 0));
+  }
+}
+.grupo1 {
+  animation: grupo1 1s forwards;
+  animation-delay: 4s;
+  position: relative;
+  left: 20px;
+  width: 12rem;
+  bottom: 849px;
+  opacity: 0;
+}
+@keyframes grupo1 {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: translatex(-50vh);
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    transform: translatex(calc(5px 0));
+  }
+}
+.grupo2 {
+  animation: grupo2 1s forwards;
+  animation-delay: 5s;
+  position: relative;
+  right: 36px;
+  bottom: 991px;
+  width: 12rem;
+  opacity: 0;
+}
+@keyframes grupo2 {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: translatex(50%);
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    transform: translatex(calc(5px 0));
+  }
+}
+@media (min-width: 700px) {
+  .elipse1 {
+    width: 23rem;
+  }
+  .elipse2 {
+    width: 20rem;
+    bottom: 333px;
+  }
+  .elipse3 {
+    width: 17rem;
+    bottom: 627px;
+  }
+  .retangle {
+    width: 14rem;
+    bottom: 919px;
+  }
+  .grupo1 {
+    left: 23px;
+    width: 16rem;
+    bottom: 1203px;
+  }
+  .grupo2 {
+    right: 36px;
+    bottom: 1393px;
+    width: 17rem;
+  }
+  .container {
+    height: 397px;
+  }
+  .containerText > h2 {
+    font-size: 38px;
+    width: 381px;
+  }
+  .containerText > p {
+    font-size: 24px;
+  }
+  .containerText > button {
+    width: 17rem;
+    height: 3rem;
+    font-size: 25px;
+  }
+}
+@media (min-width: 1100px) {
+  .templateInical {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+  .kenzie {
+    position: relative;
+    right: 525px;
+  }
+}

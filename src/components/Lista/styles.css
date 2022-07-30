@@ -1,0 +1,65 @@
+.lista {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 19rem;
+  font-family: "Nunito", sans-serif;
+}
+.lista > span {
+  width: 10px;
+}
+.lista > div > h2 {
+  font-size: 14px;
+  width: 150px;
+}
+.excluir {
+  width: 27px;
+  height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e9ecef;
+  border: none;
+  cursor: pointer;
+}
+.listaVazia > div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 34px;
+  align-content: center;
+  align-items: center;
+}
+.listaVazia > div > img {
+  width: 16rem;
+}
+ul {
+  display: flex;
+  padding: 0;
+  margin-bottom: 40px;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+@media (min-width: 700px) {
+  .lista {
+    width: 35rem;
+  }
+  .lista > div > h2 {
+    width: 285px;
+    text-align: left;
+  }
+  .lista > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .listaVazia > div > img {
+    width: 100%;
+  }
+}
